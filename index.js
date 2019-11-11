@@ -48,6 +48,13 @@ function firstclick() {
     location.replace("page2.html")
   }
 
+  function mouseDown() {
+    document.getElementById("myP").style.color = "red";
+  }
+  
+  function mouseUp() {
+    document.getElementById("myP").style.color = "green";
+  }
 
 
 
