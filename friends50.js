@@ -1,15 +1,12 @@
 var startPosLat;
 var startPosLong;
 
-
-
-
  var numbers = [
-    'ha hårdare straff <br> på våldäkter?',
-    'dricka alkohol på gatan?',
-    'få köra med bil med<br> 0.5 promille i blodet?',
-    'ha bättre skolmat', 'köpa starköl <br> vid 18 års ålder?',
-    'förbjuda Sprit över 30%?',]; //En array med frågor
+    'legalisera cannabis?',
+    'tillåta prostution?',
+    'Förbjuda burka?',
+    'få köra båt med 0.8 promillei blodet?', 'Tillåta kokain på krogar?',
+    'förbjuda rasistiska partier?',]; //En array med frågor
 
   function addfraga () { // En funktion som ger startPosLat och startPosLong ett värde
  
@@ -18,9 +15,9 @@ var startPosLong;
   //if(startPosLat < 60.057612 &&  startPosLong > 17.478959 && startPosLat > 60.00324 && startPosLong < 17.610694)
   {
     numbers = numbers.concat([
-      "bygga fler hyresrätter i <br> områden där höginkomsttagare <br> bor i Stockholm?",
-      "ha vägtullar i stockholm?",
-      "ha militär polis i <br> stockholms förorter?",
+      "Ha fet jävla rejv fest i kungsträdgården?",
+      "Tillåta fotbollsfans slås mot varandra efter en match på en angiven plats i stockholm?",
+      "ha en graffitivägg på slottet i stockholm?",
     ]);
     }
 
@@ -39,6 +36,7 @@ var startPosLong;
   var clicks = 0;
   function spin() //onclick funktion spin
 
+
   {
     
     clicks += 1;
@@ -46,8 +44,7 @@ var startPosLong;
 
     if (numbers.length == 0) //Om spelet är klart visas en "alert"
     {
-      alert ("Spelet är klart");
-  
+      alert("Spelet är klart");
       location.replace("page2.html"); //När man väljer stäng så kommer man tillbaka till valsidan
       generateNumbers();
   
@@ -66,7 +63,10 @@ var startPosLong;
     //Ljud vid button click
     var audio = document.getElementById("audio");
     audio.play();
+  
+   
     
+
   }
   
   function mute() {
@@ -138,7 +138,7 @@ var geoLoc;
         dialogbox.style.display = "block";
         document.getElementById('dialogboxhead').innerHTML = "Är du säker på att du vill avsluta?";
         document.getElementById('dialogboxbody').innerHTML = dialog;
-        document.getElementById('dialogboxfoot').innerHTML = '<button class="nej" onclick="Alert.ok()">Nej</button>'
+        document.getElementById('dialogboxfoot').innerHTML = '<button class="nej" onclick="Alert.ok()">Ångra</button>'
         document.getElementById('dialogboxend').innerHTML = '<button class="ja" onclick="backtoelections()">Ja</button>'
 
     }

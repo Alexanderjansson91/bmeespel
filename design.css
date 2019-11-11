@@ -28,6 +28,51 @@ background-color: #FFA595;
 height: 10vh;
 text-align: center;  
 }
+
+.omspelet{
+  position: fixed;
+  left: 0;
+  Margin-top:5vh;
+  width: 100%;
+  background-color: #FFA595;
+  height: 10vh;
+  text-align: center; 
+  color: white;
+  Font-size:3.2vh;
+}
+  .spelettext{
+    margin-top: 17vh;
+    text-align: justify;
+    opacity: 0.8;
+    margin-right:3vh;
+    margin-left:3vh;
+  }
+
+  .beskrivning{
+    font-size:20%;
+  }
+
+  .policytext{
+    margin-top: 16vh;
+    text-align: justify;
+    opacity: 0.8;
+    margin-right:3vh;
+    margin-left:3vh;
+  }
+
+
+
+.policy{
+  position: fixed;
+  left: 0;
+  Margin-top:2vh;
+  width: 100%;
+  background-color: #FFA595;
+  height: 10vh;
+  text-align: center; 
+  color: white;
+  Font-size:3.2vh;
+}
   
 /* Bildens startsida*/
 .image{
@@ -52,7 +97,7 @@ font-size: 3vh;
 float: left;
 font-size:3vh;
 margin-left:5%;
-margin-top:3vh;
+margin-top:1vh;
 color: white;
 background: none;
 border:none;
@@ -63,7 +108,7 @@ border:none;
 float: right;
 font-size:3vh;
 margin-right:5%;
-margin-top:3vh;
+margin-top:1.5vh;
 color: white;
 background: none;
 border:none;
@@ -71,14 +116,14 @@ border:none;
 
 /* Familj knappen på valsidan och val av kort sidan*/
 .familj{
-font-size: 250%;
+font-size: 60px;
 text-align: center;
 list-style-type: none;
 margin-bottom: 10vh;
 color:white;
-margin-left: auto;
+height: 35vh;
 width: 300px;
-padding: 14vh;;
+padding: 1vh;
 background-color:#E87B7B;
 border-radius:10px; 
 float: none;
@@ -90,13 +135,14 @@ transform: translate(-50%, -50%);
 }
 /* vänner knappen på valsidan och val av kort sidan*/
 .vänner{
-font-size: 250%;
+  font-size: 60px;
 text-align: center;
 list-style-type: none;
 margin-top: 20vh;
 color:white;
 width: 300px;
-padding: 14vh;
+height: 35vh;
+padding: 1vh;
 background-color:#E87B7B;
 border-radius:10px; 
 float: none;
@@ -112,32 +158,38 @@ text-align: center;
 list-style-type: none;
 margin-top: 27vh;
 color:white;
-width: 250px;
-height:40vh;
+width: 220px;
+height:45vh;
 background-color:#E87B7B;
 border-radius:10px; 
 float: none;
 position: absolute;
-top: 10%;
+top: 12%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
+
+.count{
+  width: 250px;
+height:50vh;
+}
+
 /* det stora kortet på spelsidan */
 .headline{
 font-size: 150%;
 text-align: center;
 list-style-type: none;
-margin-top: 20vh;
+margin-top: 17vh;
 border-style:solid;
-border-color: tomato;
-width: 300px;
+border-color: rgb(21, 147, 14, 0.3);
+width: 250px;
 height:60vh;
 color:#E87B7B ;
 font-size: 5vh;
 border-radius:10px; 
 float: none;
 position: absolute;
-top: 25%;
+top: 30%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
@@ -165,7 +217,7 @@ font-size:10px;
 }
 /* Design till boxen som håller ihop ljudknapparna*/
 .ljudbox{
-  margin-top: 0.5vh;
+  margin-top: 0;
   margin-left:auto;
   margin-right:auto; 
   text-align: center;
@@ -185,59 +237,149 @@ font-size:10px;
   }
 
   .gpsposition{
-    margin-top: 73vh;
+    margin-top: 75vh;
     margin-left:auto;
     margin-right:auto; 
     text-align: center;
   }
 
-/* Desigen för sidan där man godkänner att sidan använder sig av din plats. vet ej om denna ska användas så jag kommenterar bort den.
-.infogps{
+  .räknare{
+    float: right;
+    margin-top:-4vh;
+    color:#FFA595;
+    text-align: center;
+    border:1vh;
+    border-color: blue;
+   
+  }
+
+
+  .avsluta{
+    float: left;
+    color:#FFA595;
+    list-style-type: none;
+    font-size:3vh;
+    border: none;
+    background: white;
+    
+  }
+
+  #dialogoverlay{
+    display: none;
+    opacity: .8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #FFF;
+    width: 100%;
+    z-index: 10;
+  }
+  #dialogbox{
+    display: none;
+    position: fixed;
+    background: #FFA595;
+    border-radius:7px; 
+    height: 100;
+    width: 300px;
+    z-index: 10;
+    float: none;
+    text-align: center;
+    float: none;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+ 
+
+  }
+  #dialogbox > div{ background:#FFF; margin:8px; }
+  #dialogbox > div > #dialogboxhead{ background: #FFA595; font-size:13px; padding:10px; color:rgb(255, 255, 255); }
+  #dialogbox > div > #dialogboxbody{ background:#FFA595; padding:20px; color:#FFF; }
+  #dialogbox > div > #dialogboxfoot{ background: #FFA595;  margin-bottom: }
+  #dialogbox > div > #dialogboxend{  background: #FFA595;  color: #FFA595}
+
+
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+
+  padding: 15px; /* Some padding */  
+  border: 1px solid #FFA595; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
   
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+ border-color:#FFA595;
+  color: tomato;
+  padding: 20px;
+  width: 80%;
+  height: 70vh;
+  margin-left:auto; 
+  margin-right:auto; 
+  margin-top:10px;
+}
+
+.skicka{
+  background: #FFA595;
+  color: white;
+  border:none;
+  border-radius:1vh;
+  width: 10vh;
+  height: 4vh;
+}
+
+.rubrikkontakt{
+font-size: 5vh;
 text-align: center;
-list-style-type: none;
-margin-top: 20vh;
-border-style:solid;
-border-color: rgb(255, 255, 255);
-width: 300px;
-height:15vh;
-color:#E87B7B ;
-font-size: 3vh;
-border-radius:10px; 
-float: none;
-position: absolute;
-top: 30%;
-left: 50%;
-transform: translate(-50%, -50%);
+color: tomato;
 }
 
-.Accept{
-font-size: 80%;
-text-align: center;
-list-style-type: none;
-margin-top: 1vh;
-color:white;
-margin-left: auto;
-margin-right: auto;
-width: 200px;
-padding: 3vh;
-background-color:#E87B7B;
-border-radius:10px; 
-float: none;
-position: absolute;
-top: 70%;
-left: 50%;
-transform: translate(-50%, -50%); 
-
+.infocontact{
+  font-size: 2vh;
+  text-align: center;
+  color: tomato;
+  border-bottom: 1px solid tomato;
+  opacity: 0.7;
 }
 
-.platsbild{
-width:40vh;
-float: none;
-position: absolute;
-top:20%;
-left: 50%;
-transform: translate(-50%, -50%); 
-}
-*/
+.ja{
+  color: #ffffff;
 
+  border-color: white;
+  background: #FFA595;
+  border:solid 1px;
+  width:50%;
+  height:5vh;
+  float: left;
+  
+}
+
+.nej{
+  color: #ffffff;
+
+  border-color: white;
+  background: #FFA595;
+  border:solid 1px;
+  height:5vh;
+  width:50%;
+  float:right;
+  margin-bottom: 1vh;
+}
+
+.alert {
+  background-color: blue;
+}

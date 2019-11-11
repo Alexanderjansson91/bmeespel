@@ -10,8 +10,59 @@
 </head>
 <body>
     <button class="back" onclick="goback()" >&#9665;</button><br/> <!-- Gå  tillbaka till start. --> 
-
    
+    <section class="rubrikkontakt">
+      <p>Kontakta oss</p>
+      </section>
+
+
+  <section class="infocontact">
+    <p>Om du har en fråga eller något som som du vill att vi ska</p>
+    <p>förbättra. tveka då inte att kontakta oss</p>
+  </section>
+
+
+
+
+
+    <div class="container">
+        <form action="http://primat.se/services/sendform.aspx?recipient=alexander_jansson_91@hotmail.com" method="post">
+      
+          <label for="fname">Förnamn</label>
+          <br/>
+          <input type="text" id="fname" name="firstname" placeholder="Förnamn..">
+            <br/>
+
+
+          <label for="lname">Efternamn</label>
+          <br/>
+          <input type="text" id="lname" name="lastname" placeholder="Efternamn..">
+          <br/>
+
+          <label for="lname">Din email</label>
+          <br/>
+          <input type="text" id="lname" name="lastname" placeholder="Din email..">
+          <br/>
+
+
+          <label for="country">Ämne</label>
+          <br/>
+        
+          <select id="country" name="country" class="country">
+            <option value="australia">Förslag</option>
+            <option value="canada">anmälan</option>
+            <option value="usa">Övrigt</option>
+          </select>
+          <br/>
+          <label for="subject">Meddelande</label>
+          <br/>
+          <textarea id="subject" name="subject" placeholder="Meddelande.." class="submit"></textarea>
+          <br/>
+         
+     
+          <button class="skicka" type="submit" value="Submit" onclick="myFunction()">Skicka</button>
+        </form>
+      </div>
     
     
 </html>

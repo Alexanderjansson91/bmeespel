@@ -5,7 +5,7 @@ var startPosLong;
 
 
  var numbers = [
-    'ha hårdare straff <br> på våldäkter?',
+    'ha hårdare 100 asdasdasdasd straff <br> på våldäkter?',
     'dricka alkohol på gatan?',
     'få köra med bil med<br> 0.5 promille i blodet?',
     'ha bättre skolmat', 'köpa starköl <br> vid 18 års ålder?',
