@@ -98,7 +98,7 @@ var geoLoc;
     var output=document.getElementById("output"); 
      //skriver ut svar
     addfraga();
-    alert("Din posistion är påslag.");
+   
 
   }
 
