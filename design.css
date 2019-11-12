@@ -97,7 +97,7 @@ font-size: 3vh;
 float: left;
 font-size:3vh;
 margin-left:5%;
-margin-top:1vh;
+margin-top:1.2vh;
 color: white;
 background: none;
 border:none;
@@ -112,6 +112,10 @@ margin-top:0.9vh;
 color: white;
 background: none;
 border:none;
+}
+
+.far{
+  font-size: 3.2vh;
 }
 
 /* Familj knappen på valsidan och val av kort sidan*/
@@ -181,7 +185,8 @@ text-align: center;
 list-style-type: none;
 margin-top: 17vh;
 border-style:solid;
-border-color: rgb(21, 147, 14, 0.3);
+border-color: rgb(87, 136, 87);
+
 width: 250px;
 height:60vh;
 color:#E87B7B ;
@@ -200,7 +205,7 @@ border-color: #FFA595;
 background: #FFA595;
 color: white;
 border-radius: 1vh;
-width:20%;
+width:15%;
 height: 30px;
 font-size:10px;
 }
@@ -211,10 +216,13 @@ border-color: #FFA595;
 background: #FFA595;
 color: white;
 border-radius: 1vh;
-width:20%;
+width:15%;
 height: 30px;
 font-size:10px;
 }
+
+
+
 /* Design till boxen som håller ihop ljudknapparna*/
 .ljudbox{
   margin-top: 0;
@@ -235,7 +243,6 @@ font-size:10px;
   font-size:13px;
   border-width: 5px;
   }
-
 
 
   .gpsposition{
@@ -288,7 +295,7 @@ font-size:10px;
     text-align: center;
     float: none;
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
    

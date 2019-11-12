@@ -56,6 +56,3 @@ function firstclick() {
     document.getElementById("myP").style.color = "green";
   }
 
-
-
-
