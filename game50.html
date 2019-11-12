@@ -7,6 +7,8 @@
     <script src="random50.js"></script>
     <script src="index.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="design.css">
     <title>Document</title>
 </head>
@@ -36,12 +38,12 @@
         
 
 
-
+    <div class="tab">
 <section class="ljudbox"> <!-- Sektion för att stänga av/på ljudet. --> 
-    <button onmouseover="scaleUp(this,'12px')" onmouseout="scaleUp(this,'10px')"  class="mute" onclick="mute()" type="button"><i style='font-size:24px' class='fas'>&#xf6a9;</i></button>
-    <button onmouseover="scaleUp(this,'12px')" onmouseout="scaleUp(this,'10px')" class="sound" onclick="soundon()" type="button"><i style='font-size:24px' class='fas'>&#xf028;</i></button>
+    <button id="sounds" onmouseover="scaleUp(this,'12px')" onmouseout="scaleUp(this,'10px')"  class="mute" onclick="mute()" type="button"><i style='font-size:24px' class='fas'>&#xf6a9;</i></button>
+    <button id="sounds" onmouseover="scaleUp(this,'12px')" onmouseout="scaleUp(this,'10px')" class="sound" onclick="soundon()" type="button"><i style='font-size:24px' class='fas'>&#xf028;</i></button>
 </section>
-
+</div>
 
 
         <section class="gpsposition">

@@ -205,6 +205,8 @@ border-color: #FFA595;
 background: #FFA595;
 color: white;
 border-radius: 1vh;
+outline: none;
+cursor: pointer;
 width:15%;
 height: 30px;
 font-size:10px;
@@ -216,11 +218,18 @@ border-color: #FFA595;
 background: #FFA595;
 color: white;
 border-radius: 1vh;
+outline: none;
+cursor: pointer;
 width:15%;
 height: 30px;
 font-size:10px;
 }
 
+.sound:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
 
 
 /* Design till boxen som håller ihop ljudknapparna*/
@@ -262,6 +271,8 @@ font-size:10px;
    
   }
 
+
+  
 
   .avsluta{
     float: left;
@@ -392,3 +403,4 @@ color: tomato;
 .alert {
   background-color: blue;
 }
+

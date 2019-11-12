@@ -55,4 +55,3 @@ function firstclick() {
   function mouseUp() {
     document.getElementById("myP").style.color = "green";
   }
-
