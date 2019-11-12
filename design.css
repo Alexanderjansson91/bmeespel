@@ -445,3 +445,43 @@ color: tomato;
 }
 
 
+
+
+
+.callout {
+  position: fixed;
+  bottom: 12%;
+  right: 5%;
+  width:20vh;
+
+}
+
+.callout-header {
+  padding: 25px 15px;
+  background: rgb(223, 125, 125);
+  font-size: 14px;
+  color: white;
+  border-radius: 1vh;
+  margin-top:7vh;
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: #ccc;
+  color: black
+}
+
+.closebtn {
+  position: absolute;
+  top: 7vh;
+  right: 12px;
+  color: white;
+  font-size: 3vh;
+  cursor: pointer;
+
+}
+
+.closebtn:hover {
+  color: lightgrey;
+}
+

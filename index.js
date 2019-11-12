@@ -83,4 +83,12 @@ function myStartFunction(event) {
   this.innerHTML = "The animation-name is: " + event.animationName;
 }
 
+
+var slideSource = document.getElementById('callout');
+
+document.getElementById('handle').onclick = function () {
+  slideSource.classList.toggle('fade');
+}
+
   
+
