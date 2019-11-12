@@ -84,11 +84,7 @@ function myStartFunction(event) {
 }
 
 
-var slideSource = document.getElementById('callout');
 
-document.getElementById('handle').onclick = function () {
-  slideSource.classList.toggle('fade');
-}
 
   
 
