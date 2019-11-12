@@ -77,7 +77,8 @@ text-align: center;
 /* Bildens startsida*/
 .image{
 width: 40vh;
-margin-top: 7%;
+
+margin-bottom: 5vh;
 display: block;
 margin-left: auto;
 margin-right: auto;   
@@ -225,11 +226,6 @@ height: 30px;
 font-size:10px;
 }
 
-.sound:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
-}
 
 
 /* Design till boxen som håller ihop ljudknapparna*/
@@ -403,4 +399,48 @@ color: tomato;
 .alert {
   background-color: blue;
 }
+
+#bild {
+ 
+
+  background: red;
+  position: relative;
+  -webkit-animation: mymove 2s;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation: mymove 2s;
+  animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {top: -230px;}
+  to {top: 20px; }
+}
+
+@keyframes mymove {
+  from {top: -230px;}
+  to {top: 20px; }
+}
+
+
+#demo{
+ 
+  position: relative;
+  -webkit-animation: mymove 27s;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation: mymove 2s;
+  animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {top: -230px;}
+  to {top: 20px; }
+}
+
+@keyframes mymove {
+  from {top: -230px;}
+  to {top: 70px; }
+}
+
 

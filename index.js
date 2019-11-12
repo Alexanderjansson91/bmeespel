@@ -55,3 +55,32 @@ function firstclick() {
   function mouseUp() {
     document.getElementById("myP").style.color = "green";
   }
+
+ 
+  var x = document.getElementById("bild");
+
+// Code for Chrome, Safari and Opera
+x.addEventListener("webkitAnimationStart", myStartFunction);
+
+// Standard syntax
+x.addEventListener("animationstart", myStartFunction);
+
+function myStartFunction(event) {
+  this.innerHTML = "The animation-name is: " + event.animationName;
+}
+
+
+
+var x = document.getElementById("demo");
+
+// Code for Chrome, Safari and Opera
+x.addEventListener("webkitAnimationStart", myStartFunction);
+
+// Standard syntax
+x.addEventListener("animationstart", myStartFunction);
+
+function myStartFunction(event) {
+  this.innerHTML = "The animation-name is: " + event.animationName;
+}
+
+  

@@ -42,7 +42,7 @@ var startPosLong;
   {
     
     clicks += 1;
-    document.getElementById("demo").innerHTML = clicks;
+    document.getElementById("antal").innerHTML = clicks;
 
     if (numbers.length == 0) //Om spelet är klart visas en "alert"
     {
