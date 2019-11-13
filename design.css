@@ -11,7 +11,10 @@ width: 300px;
 padding: 3vh;
 margin-bottom: 35vh;
 background-color:#E87B7B;
-border-radius:10px; 
+border-radius:1vh; 
+border:1vh;
+border-style:solid;
+border-color: #4B7C9C;
 float: none;
 position: absolute;
 
@@ -140,7 +143,10 @@ height: 35vh;
 width: 300px;
 padding: 1vh;
 background-color:#E87B7B;
-border-radius:10px; 
+border-radius:1vh; 
+border:1vh;
+border-style:solid;
+border-color: #4B7C9C;
 float: none;
 position: absolute;
 top: 35%;
@@ -160,7 +166,10 @@ width: 300px;
 height: 35vh;
 padding: 1vh;
 background-color:#E87B7B;
-border-radius:10px; 
+border-radius:1vh; 
+border:1vh;
+border-style:solid;
+border-color: #4B7C9C;
 float: none;
 position: absolute;
 top: 55%;
@@ -176,12 +185,12 @@ list-style-type: none;
 margin-top: 27vh;
 color:white;
 width: 220px;
-height:45vh;
+height:40vh;
 background-color:#E87B7B;
 border-radius:10px; 
 float: none;
 position: absolute;
-top: 12%;
+top: 15%;
 left: 50%;
 transform: translate(-50%, -50%);
 font-family: 'Maven Pro', sans-serif;
@@ -197,15 +206,16 @@ height:50vh;
 
 text-align: center;
 list-style-type: none;
-margin-top: 17vh;
+margin-top: 12vh;
 border-style:solid;
-border-color: rgb(87, 136, 87);
+border-color: #4B7C9C;
 font-family: 'Mitr', sans-serif;
 width: 250px;
 height:60vh;
 color:#E87B7B ;
+b
 font-size: 3vh;
-border-radius:10px; 
+border-radius:1vh; 
 float: none;
 position: absolute;
 top: 30%;
@@ -243,7 +253,7 @@ font-size:10px;
 
 /* Design till boxen som håller ihop ljudknapparna*/
 .ljudbox{
-  margin-top: 0;
+  margin-top: 1vh;
   margin-left:auto;
   margin-right:auto; 
   text-align: center;
@@ -265,7 +275,7 @@ font-size:10px;
 
 
   .gpsposition{
-    margin-top: 75vh;
+    margin-top: 70vh;
     margin-left:auto;
     margin-right:auto; 
     text-align: center;
@@ -420,9 +430,7 @@ font-family: 'Mitr', sans-serif;
 
 }
 
-.alert {
-  background-color: blue;
-}
+
 
 #bild {
  
@@ -515,54 +523,14 @@ font-family: 'Mitr', sans-serif;
 
 
 
-.callout {
-  position: fixed;
-  bottom: 12%;
-  right: 5%;
-  width:40%;
 
-
-}
-
-.callout-header {
-  padding: 25px 15px;
-  background: rgb(223, 125, 125);
-  font-size: 14px;
-  color: white;
-  border-radius: 1vh;
-  margin-top:7vh;
-  padding: 5%;
-  font-family: 'Didact Gothic', sans-serif;
-  height: 18%;
-  letter-spacing: 2px;
-}
-
-.callout-container {
-  padding: 15px;
-  background-color: #ccc;
-  color: black
-}
-
-.closebtn {
-  position: absolute;
-  top: 7vh;
-  right: 12px;
-  color: white;
-  font-size: 3vh;
-  cursor: pointer;
-
-}
-
-.closebtn:hover {
-  color: lightgrey;
-}
 
 .rubriker{
   text-align: center;
   font-size: 5vh;
   color: #FFA595;
   font-family: 'Mitr', sans-serif;
-  
+ 
 }
 
 
