@@ -480,12 +480,12 @@ font-family: 'Mitr', sans-serif;
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes mymoves {
   from {top: -230px;}
-  to {top: 5px; }
+  to {top: -4px; }
 }
 
 @keyframes mymoves {
   from {top: -230px;}
-  to {top: 5px; }
+  to {top: -4px; }
 }
 
 
