@@ -39,7 +39,7 @@ text-align: center;
 }
 
 .omspelet{
-  position: fixed;
+  position: absolute;
   left: 0;
   Margin-top:5vh;
   width: 100%;
@@ -77,7 +77,7 @@ text-align: center;
 
 
 .policy{
-  position: fixed;
+  position: absolute;
   left: 0;
   Margin-top:2vh;
   width: 100%;
