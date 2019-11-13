@@ -15,19 +15,19 @@ function firstclick() {
   }
 
   function family50() {
-  location.replace("game50.html") // Gå till spelet
+  location.replace("game50.html") // Gå till spelet för 50 kort för familjen
     }
 
   function game100() {
-    location.replace("game100.html") // Gå till spelet
+    location.replace("game100.html") // Gå till spelet 100 kort för familjen
       }
 
   function friends100() {
-    location.replace("friends100.html") // Gå till spelet
+    location.replace("friends100.html") // Gå till spelet 100 kort för vänner
        }
 
   function vanner50() {
-    location.replace("vänner50.html") // Gå till spelet
+    location.replace("vänner50.html") // Gå till spelet 50 kort för vänner
       }
 
   function family() {
@@ -40,71 +40,49 @@ function firstclick() {
     location.replace("page2.html") //tillbaka till sida nummer 2
   }
   function send() {
-    alert("The form was submitted");
+    alert("The form was submitted"); //Alert som 
   }
 
   function myFunction() {
-    alert("Vi har mottagit ditt meddelande");
-    location.replace("page2.html")
+    alert("Vi har mottagit ditt meddelande"); //Alert som visas efter du har skickat meddelande
+    location.replace("index.html")
   }
 
   function mouseDown() {
-    document.getElementById("myP").style.color = "red";
+    document.getElementById("myP").style.color = "red"; //trycker du på GPS efter att du har godkänt gps:en så blinkar det rött
   }
   
   function mouseUp() {
-    document.getElementById("myP").style.color = "green";
+    document.getElementById("myP").style.color = "green"; //När du trycker GPS knappen så blir det grön
   }
 
- 
-  var x = document.getElementById("bild");
 
-// Code for Chrome, Safari and Opera
+var x = document.getElementById("bild"); //läser av från Html dokumentet (loggan)
+
+//Skapar en animation för loggan
 x.addEventListener("webkitAnimationStart", myStartFunction);
-
-// Standard syntax
 x.addEventListener("animationstart", myStartFunction);
-
 function myStartFunction(event) {
   this.innerHTML = "The animation-name is: " + event.animationName;
 }
 
 
 
-var x = document.getElementById("demo");
-
-// Code for Chrome, Safari and Opera
+var x = document.getElementById("demo");//läser av från Html dokumentet (menyn)
+//Skapar en animation för menyn
 x.addEventListener("webkitAnimationStart", myStartFunction);
-
-// Standard syntax
 x.addEventListener("animationstart", myStartFunction);
-
 function myStartFunction(event) {
   this.innerHTML = "The animation-name is: " + event.animationName;
 }
 
-var x = document.getElementById("rubrikslide");
-
-// Code for Chrome, Safari and Opera
+var x = document.getElementById("rubrikslide");//läser av från Html dokumentet (Kategorier och Antal kort)
+//Skapar en animation för vissa rubriker
 x.addEventListener("webkitAnimationStart", myStartFunction);
-
-// Standard syntax
 x.addEventListener("animationstart", myStartFunction);
-
 function myStartFunction(event) {
   this.innerHTML = "The animation-name is: " + event.animationName;
 }
 
-var x = document.getElementById("arrowslide");
-
-// Code for Chrome, Safari and Opera
-x.addEventListener("webkitAnimationStart", myStartFunction);
-
-// Standard syntax
-x.addEventListener("animationstart", myStartFunction);
-
-function myStartFunction(event) {
-  this.innerHTML = "The animation-name is: " + event.animationName;
-}
 
 

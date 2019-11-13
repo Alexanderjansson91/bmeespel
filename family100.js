@@ -1,6 +1,5 @@
-var startPosLat;
-var startPosLong;
-
+var startPosLat; //variabel för latitude
+var startPosLong; //variabel för longitude
 
 
 
@@ -17,7 +16,6 @@ var startPosLong;
  
   console.log(startPosLat);
   if(startPosLat < 59.315028 &&  startPosLong > 17.989388 && startPosLat > 59.299376 && startPosLong < 18.029594)
-  //if(startPosLat < 60.057612 &&  startPosLong > 17.478959 && startPosLat > 60.00324 && startPosLong < 17.610694)
   {
     numbers = numbers.concat([
       "bygga fler hyresrätter i <br> områden där höginkomsttagare <br> bor i Stockholm?",
