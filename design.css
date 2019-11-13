@@ -3,7 +3,7 @@
 font-size: 250%;
 text-align: center;
 list-style-type: none;
-margin-top: 16vh;
+margin-top: 10vh;
 color:white;
 margin-left: auto;
 margin-right: auto;
@@ -14,9 +14,10 @@ background-color:#E87B7B;
 border-radius:10px; 
 float: none;
 position: absolute;
-top: 40%;
+
 left: 50%;
 transform: translate(-50%, -50%); 
+font-family: 'Maven Pro', sans-serif;
 }
 
 /* design för bottenboxen */
@@ -40,6 +41,7 @@ text-align: center;
   text-align: center; 
   color: white;
   Font-size:3.2vh;
+  font-family: 'Mitr', sans-serif;
 }
   .spelettext{
     margin-top: 17vh;
@@ -47,10 +49,12 @@ text-align: center;
     opacity: 0.8;
     margin-right:3vh;
     margin-left:3vh;
+    font-family: 'Didact Gothic', sans-serif;
   }
 
   .beskrivning{
     font-size:20%;
+    font-family: 'Didact Gothic', sans-serif;
   }
 
   .policytext{
@@ -59,6 +63,8 @@ text-align: center;
     opacity: 0.8;
     margin-right:3vh;
     margin-left:3vh;
+    font-family: 'Didact Gothic', sans-serif;
+    
   }
 
 
@@ -73,6 +79,7 @@ text-align: center;
   text-align: center; 
   color: white;
   Font-size:3.2vh;
+  font-family: 'Mitr', sans-serif;
 }
   
 /* Bildens startsida*/
@@ -94,7 +101,7 @@ color:#FFA595 ;
 font-size: 3vh;
 }
 
-/* design för inställningsknappen */
+/* design för Kontakt knappen */
 .Inställningar{
 float: left;
 font-size:3vh;
@@ -103,6 +110,7 @@ margin-top:1.2vh;
 color: white;
 background: none;
 border:none;
+font-family: 'Maven Pro', sans-serif;
 }
 
 /* design för om oss knappen */
@@ -114,6 +122,7 @@ margin-top:0.9vh;
 color: white;
 background: none;
 border:none;
+font-family: 'Maven Pro', sans-serif;
 }
 
 .far{
@@ -134,9 +143,10 @@ background-color:#E87B7B;
 border-radius:10px; 
 float: none;
 position: absolute;
-top: 30%;
+top: 35%;
 left: 50%;
 transform: translate(-50%, -50%);
+font-family: 'Maven Pro', sans-serif;
 
 }
 /* vänner knappen på valsidan och val av kort sidan*/
@@ -153,13 +163,14 @@ background-color:#E87B7B;
 border-radius:10px; 
 float: none;
 position: absolute;
-top: 50%;
+top: 55%;
 left: 50%;
 transform: translate(-50%, -50%);
+font-family: 'Maven Pro', sans-serif;
 }
 /* 50 kort knappen */
 .kortfamilj50{
-font-size: 50%;
+font-size: 80%;
 text-align: center;
 list-style-type: none;
 margin-top: 27vh;
@@ -173,6 +184,7 @@ position: absolute;
 top: 12%;
 left: 50%;
 transform: translate(-50%, -50%);
+font-family: 'Maven Pro', sans-serif;
 }
 
 .count{
@@ -182,17 +194,17 @@ height:50vh;
 
 /* det stora kortet på spelsidan */
 .headline{
-font-size: 150%;
+
 text-align: center;
 list-style-type: none;
 margin-top: 17vh;
 border-style:solid;
 border-color: rgb(87, 136, 87);
-
+font-family: 'Mitr', sans-serif;
 width: 250px;
 height:60vh;
 color:#E87B7B ;
-font-size: 5vh;
+font-size: 3vh;
 border-radius:10px; 
 float: none;
 position: absolute;
@@ -235,6 +247,7 @@ font-size:10px;
   margin-left:auto;
   margin-right:auto; 
   text-align: center;
+  float: none;
 }
 
 .gps {
@@ -243,7 +256,7 @@ font-size:10px;
   background: rgb(255, 255, 255);
   color:#FFA595;
   border-radius: 1vh;
-
+  font-family: 'Maven Pro', sans-serif;
   width:230px;
   height: 50px;
   font-size:13px;
@@ -263,8 +276,10 @@ font-size:10px;
     margin-top:-4vh;
     color:#FFA595;
     text-align: center;
-    border:1vh;
-    border-color: blue;
+    font-size:3vh;
+    font-family: 'Didact Gothic', sans-serif;
+
+    
    
   }
 
@@ -275,7 +290,7 @@ font-size:10px;
     float: left;
     color:#FFA595;
     list-style-type: none;
-    font-size:3vh;
+    font-size:2.5vh;
     border: none;
     background: white;
     
@@ -306,22 +321,22 @@ font-size:10px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-   
+    font-family: 'Mitr', sans-serif;
  
 
   }
   #dialogbox > div{ background:#FFF; margin:8px; }
-  #dialogbox > div > #dialogboxhead{ background: #FFA595; font-size:13px; padding:10px; color:rgb(255, 255, 255); }
+  #dialogbox > div > #dialogboxhead{  font-family: 'Didact Gothic', sans-serif;background: #FFA595; font-size:13px; padding:10px; color:rgb(255, 255, 255); }
   #dialogbox > div > #dialogboxbody{ background:#FFA595; padding:20px; color:#FFF; }
   #dialogbox > div > #dialogboxfoot{ background: #FFA595;  margin-bottom: }
-  #dialogbox > div > #dialogboxend{  background: #FFA595;  color: #FFA595}
+  #dialogbox > div > #dialogboxend{  background: #FFA595;  color: #FFA595 }
 
 
 
   /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   width: 100%; /* Full width */
-
+  font-family: 'Didact Gothic', sans-serif;
   padding: 15px; /* Some padding */  
   border: 1px solid #FFA595; /* Gray border */
   border-radius: 4px; /* Rounded borders */
@@ -333,9 +348,7 @@ input[type=text], select, textarea {
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
+
 
 /* Add a background color and some padding around the form */
 .container {
@@ -348,6 +361,7 @@ input[type=submit]:hover {
   margin-left:auto; 
   margin-right:auto; 
   margin-top:10px;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 .skicka{
@@ -357,12 +371,17 @@ input[type=submit]:hover {
   border-radius:1vh;
   width: 10vh;
   height: 4vh;
+  font-family: 'Maven Pro', sans-serif;
+  font-size:2vh
+
+  
 }
 
 .rubrikkontakt{
 font-size: 5vh;
 text-align: center;
 color: tomato;
+font-family: 'Mitr', sans-serif;
 }
 
 .infocontact{
@@ -371,6 +390,7 @@ color: tomato;
   color: tomato;
   border-bottom: 1px solid tomato;
   opacity: 0.7;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 .ja{
@@ -382,12 +402,13 @@ color: tomato;
   width:50%;
   height:5vh;
   float: left;
-  
+  font-family: 'Maven Pro', sans-serif;
+  font-size:2vh
 }
 
 .nej{
   color: #ffffff;
-
+  font-family: 'Maven Pro', sans-serif;
   border-color: white;
   background: #FFA595;
   border:solid 1px;
@@ -395,6 +416,8 @@ color: tomato;
   width:50%;
   float:right;
   margin-bottom: 1vh;
+  font-size:2vh;
+
 }
 
 .alert {
@@ -427,7 +450,7 @@ color: tomato;
 #demo{
  
   position: relative;
-  -webkit-animation: mymove 27s;  /* Safari 4.0 - 8.0 */
+  -webkit-animation: mymove 2s;  /* Safari 4.0 - 8.0 */
   -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
   animation: mymove 2s;
   animation-fill-mode: forwards;
@@ -445,6 +468,50 @@ color: tomato;
 }
 
 
+#rubrikslide{
+ 
+  position: relative;
+  -webkit-animation: mymoves 1s;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation: mymoves 1s;
+  animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymoves {
+  from {top: -230px;}
+  to {top: 5px; }
+}
+
+@keyframes mymoves {
+  from {top: -230px;}
+  to {top: 5px; }
+}
+
+
+#arrowslide{
+ 
+  position: relative;
+  -webkit-animation: arrow 2s;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation: arrow 2s;
+  animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes arrow {
+  from {top: -230px;}
+  to {top: 3px; }
+}
+
+@keyframes arrow {
+  from {top: -230px;}
+  to {top: 3px; }
+}
+
+
+
+
 
 
 
@@ -452,7 +519,8 @@ color: tomato;
   position: fixed;
   bottom: 12%;
   right: 5%;
-  width:20vh;
+  width:40%;
+
 
 }
 
@@ -463,6 +531,10 @@ color: tomato;
   color: white;
   border-radius: 1vh;
   margin-top:7vh;
+  padding: 5%;
+  font-family: 'Didact Gothic', sans-serif;
+  height: 18%;
+  letter-spacing: 2px;
 }
 
 .callout-container {
@@ -484,4 +556,16 @@ color: tomato;
 .closebtn:hover {
   color: lightgrey;
 }
+
+.rubriker{
+  text-align: center;
+  font-size: 5vh;
+  color: #FFA595;
+  font-family: 'Mitr', sans-serif;
+  
+}
+
+
+
+
 

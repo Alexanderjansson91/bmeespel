@@ -83,8 +83,28 @@ function myStartFunction(event) {
   this.innerHTML = "The animation-name is: " + event.animationName;
 }
 
+var x = document.getElementById("rubrikslide");
 
+// Code for Chrome, Safari and Opera
+x.addEventListener("webkitAnimationStart", myStartFunction);
 
+// Standard syntax
+x.addEventListener("animationstart", myStartFunction);
 
-  
+function myStartFunction(event) {
+  this.innerHTML = "The animation-name is: " + event.animationName;
+}
+
+var x = document.getElementById("arrowslide");
+
+// Code for Chrome, Safari and Opera
+x.addEventListener("webkitAnimationStart", myStartFunction);
+
+// Standard syntax
+x.addEventListener("animationstart", myStartFunction);
+
+function myStartFunction(event) {
+  this.innerHTML = "The animation-name is: " + event.animationName;
+}
+
 

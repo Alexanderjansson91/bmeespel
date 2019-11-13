@@ -5,11 +5,13 @@ var startPosLong;
 
 
  var numbers = [
-    'ha hårdare 100 korvarrrrr straff <br> på våldäkter?',
-    'dricka alkohol på gatan?',
-    'få köra med bil med<br> 0.5 promille i blodet?',
-    'ha bättre skolmat', 'köpa starköl <br> vid 18 års ålder?',
-    'förbjuda Sprit över 30%?',]; //En array med frågor
+    'legalisera cannabis?',
+    'tillåta prostution?',
+    'förbjuda Sprit över 30%?',
+    'sänka ålder på systembolaget?',
+    'förbjuda religion?',
+    'få köra båt med 0.8 promillei blodet?', 'Tillåta kokain på krogar?',
+    'förbjuda rasistiska partier?',]; //En array med frågor
 
   function addfraga () { // En funktion som ger startPosLat och startPosLong ett värde
  
@@ -18,9 +20,9 @@ var startPosLong;
   //if(startPosLat < 60.057612 &&  startPosLong > 17.478959 && startPosLat > 60.00324 && startPosLong < 17.610694)
   {
     numbers = numbers.concat([
-      "bygga fler hyresrätter i <br> områden där höginkomsttagare <br> bor i Stockholm?",
-      "ha vägtullar i stockholm?",
-      "ha militär polis i <br> stockholms förorter?",
+      "Ha fet jävla rejv fest i kungsträdgården?",
+      "Tillåta fotbollsfans slås mot varandra efter en match på en angiven plats i stockholm?",
+      "ha en graffitivägg på slottet i stockholm?",
     ]);
     }
 
@@ -28,9 +30,9 @@ var startPosLong;
     if(startPosLat < 60.057612 &&  startPosLong > 17.478959 && startPosLat > 60.00324 && startPosLong < 17.610694)
     {
       numbers = numbers.concat([
-        "bygga en ny hockey arena <br> i Uppsala?",
-        "bygga spårvagn i Uppsala?",
-        "ha ett bussfritt torg i Uppsala?",
+        "Ha dyrare alkohol på nationspubar, för att minska konkurransen?",
+        "göra uppsala stad 100% bilfritt?",
+        "få konsumera alkohol på uppsalas gator 30 April?",
       ]);
       }
   };
@@ -42,7 +44,7 @@ var startPosLong;
   {
     
     clicks += 1;
-    document.getElementById("demo").innerHTML = clicks;
+    document.getElementById("antal").innerHTML = clicks;
 
     if (numbers.length == 0) //Om spelet är klart visas en "alert"
     {
@@ -98,7 +100,7 @@ var geoLoc;
     var output=document.getElementById("output"); 
      //skriver ut svar
     addfraga();
-    
+   
 
   }
 

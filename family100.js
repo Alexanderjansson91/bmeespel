@@ -5,9 +5,11 @@ var startPosLong;
 
 
  var numbers = [
-    'ha hårdare 100 asdasdasdasd straff <br> på våldäkter?',
+    'ha hårdare 100 <br> på våldäkter?',
     'dricka alkohol på gatan?',
     'få köra med bil med<br> 0.5 promille i blodet?',
+    'som medborgare ha mer tillåtelse till att stoppa kriminalitet?',
+    'Bör vi höja lönerna i vården?',
     'ha bättre skolmat', 'köpa starköl <br> vid 18 års ålder?',
     'förbjuda Sprit över 30%?',]; //En array med frågor
 
@@ -42,7 +44,7 @@ var startPosLong;
   {
     
     clicks += 1;
-    document.getElementById("demo").innerHTML = clicks;
+    document.getElementById("antal").innerHTML = clicks;
 
     if (numbers.length == 0) //Om spelet är klart visas en "alert"
     {
@@ -98,7 +100,7 @@ var geoLoc;
     var output=document.getElementById("output"); 
      //skriver ut svar
     addfraga();
-    
+   
 
   }
 
