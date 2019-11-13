@@ -33,7 +33,7 @@ background-color: #FFA595;
 height: 10vh;
 border:solid 1vh; 
 border-color: #4B7C9C;
-border-bottom: none;
+
 border-left: none;
 text-align: center;  
 }
@@ -104,8 +104,9 @@ margin-right: auto;
 position: fixed;
 background-color:rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255);
-color:#FFA595 ;
+color:#E87B7B ;
 font-size: 3vh;
+font-family: 'Maven Pro', sans-serif;
 }
 
 /* design för Kontakt knappen */
@@ -279,7 +280,7 @@ font-size:10px;
 
 
   .gpsposition{
-    margin-top: 71vh;
+    margin-top: 73vh;
     margin-left:auto;
     margin-right:auto; 
     text-align: center;
@@ -287,14 +288,22 @@ font-size:10px;
 
   .räknare{
     float: right;
-    margin-top:-4vh;
+    width: 3%;
     color:#FFA595;
-    text-align: center;
-    font-size:3vh;
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Mitr', sans-serif;
+  }
 
-    
-   
+  .räknareord{
+    float: right;
+    width: 10%;
+    color:#FFA595;
+    font-family: 'Mitr', sans-serif;
+  }
+
+  .räknebox{
+    content: "";
+    clear: both;
+    display: table;
   }
 
 
@@ -306,8 +315,9 @@ font-size:10px;
     list-style-type: none;
     font-size:2.5vh;
     border: none;
+    margin-top:2vh;
     background: white;
-    
+    font-family: 'Mitr', sans-serif;
   }
 
   #dialogoverlay{
@@ -405,6 +415,7 @@ font-family: 'Mitr', sans-serif;
   border-bottom: 1px solid tomato;
   opacity: 0.7;
   font-family: 'Didact Gothic', sans-serif;
+  margin-top: 18vh;
 }
 
 .ja{
