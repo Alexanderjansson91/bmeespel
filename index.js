@@ -7,7 +7,7 @@ function firstclick() {
   }
 
   function settings() {
-    location.replace("settings.html") // Gå tillbaka till inställningar
+    location.replace("settings.html") // Gå tillbaka till kontakt
   }
 
   function about() {
@@ -39,9 +39,6 @@ function firstclick() {
   function backtoelections() {
     location.replace("page2.html") //tillbaka till sida nummer 2
   }
-  function send() {
-    alert("The form was submitted"); //Alert som 
-  }
 
   function myFunction() {
     alert("Vi har mottagit ditt meddelande"); //Alert som visas efter du har skickat meddelande
@@ -53,7 +50,7 @@ function firstclick() {
   }
   
   function mouseUp() {
-    document.getElementById("myP").style.color = "green"; //När du trycker GPS knappen så blir det grön
+    document.getElementById("myP").style.color = "green"; //När du trycker på GPS knappen så blir den grön
   }
 
 

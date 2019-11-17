@@ -13,11 +13,11 @@ var startPosLong;
     'få köra båt med 0.8 promillei blodet?', 'Tillåta kokain på krogar?',
     'förbjuda rasistiska partier?',]; //En array med frågor
 
-  function addfraga () { // En funktion som ger startPosLat och startPosLong ett värde
+  function addfraga () { // En funktion som binder ihop Gps:ens plats med tillägs frågor
  
   console.log(startPosLat);
+  //Om du är på liljeholmen så läggs dessa frågor på
   if(startPosLat < 59.315028 &&  startPosLong > 17.989388 && startPosLat > 59.299376 && startPosLong < 18.029594)
-  //if(startPosLat < 60.057612 &&  startPosLong > 17.478959 && startPosLat > 60.00324 && startPosLong < 17.610694)
   {
     numbers = numbers.concat([
       "Ha fet jävla rejv fest i kungsträdgården?",
@@ -26,7 +26,7 @@ var startPosLong;
     ]);
     }
 
-    
+    //Om du är i björklinge så läggs dessa frågor på 
     if(startPosLat < 60.057612 &&  startPosLong > 17.478959 && startPosLat > 60.00324 && startPosLong < 17.610694)
     {
       numbers = numbers.concat([
@@ -104,7 +104,7 @@ var output;
 
   function errorHandler(err) {
     if(err.code == 1) {
-      alert("Error: Access is denied!"); // kommer upp man inte väljer att hemsida använder din postin
+      alert("Error: Access is denied!"); // kommer upp man inte väljer att hemsidan använder din postin
     }
     
     else if( err.code == 2) {

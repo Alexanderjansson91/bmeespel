@@ -8,7 +8,7 @@ var startPosLong; //variabel för longitude
     'ha bättre skolmat', 'köpa starköl <br> vid 18 års ålder?',
     'förbjuda Sprit<br> över 30%?',]; //En array med frågor
 
-  function addfraga () { // En funktion som binder ihop Gps plats med tillägs frågor
+  function addfraga () { // En funktion som binder ihop Gps:ens plats med tillägs frågor
  
   console.log(startPosLat);
 
@@ -103,7 +103,7 @@ var output;
 
   function errorHandler(err) {
     if(err.code == 1) {
-      alert("Error: Access is denied!"); // kommer upp man inte väljer att hemsida använder din postin
+      alert("Error: Access is denied!"); // kommer upp man inte väljer att hemsidan använder din postin
     }
     
     else if( err.code == 2) {
