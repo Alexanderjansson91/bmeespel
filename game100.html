@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,70 +14,54 @@
     <link rel="stylesheet" type="text/css" href="design.css">
     <title>Document</title>
 </head>
+
 <body>
 
-
-        <div id="dialogoverlay"></div>
-        <div id="dialogbox">
-          <div>
+<!-- Avsluta pop upen -->
+<div id="dialogoverlay"></div>
+    <div id="dialogbox">
+        <div>
             <div id="dialogboxhead"></div>
             <div id="dialogboxbody"></div>
             <div id="dialogboxfoot"></div>
             <div id="dialogboxend"></div>
-            
-        </div>
-          </div>
-        </div>
-    
-      
-    <article class ="ränkebox">
-    
-           
-    <section class="räknare">
-           <p id="antal">0</p>
-    </section>
-    <section class="räknareord">
-            <p>Kort</p>
-    </section>
-    
-    </article>
-    
-        <button class="avsluta"  onclick="Alert.render('Hoppas du gilla spelet!')"><i class='fas'>&#xf2f6; Avsluta</i></button> <!-- Avsluta knappen --> 
-    
-    </br>
-    
-    
-    
-    
-    
-            <section class="gpsposition">
-            <button id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()"  class="gps" onclick="getLocationUpdate()" type="button">Starta frågor för din lokala hemort</button>
-    
-            <div id="output"></div>
-            
-        </section> 
-    
-    
-    
-    <!-- sektion för nya kort. --> 
-    <section class="ljudbox"> <!-- Sektion för att stänga av/på ljudet. --> 
-    <div id="scriptLinkPlaceholder">
-        <div class="headline"> <!-- class för kortets design --> 
-        </br>
-            <button  class="mute" onclick="mute()" type="button"><i style='font-size:24px' class='fas'>&#xf6a9;</i></button>
-                 <button   class="sound" onclick="soundon()" type="button"><i style='font-size:24px' class='fas'>&#xf028;</i></button>
-            <p>bör man eller ej</p> <!-- Rubrik. --> 
-            <button class="kortfamilj50" id="number" name="fråga"  value="PLAY" type="button"  onclick="spin()">Tryck för kort</button> <!-- Knapp för nya kort --> 
-    
-            <audio id="audio" src="ELK_clap_one_shot_snappy.wav" ></audio> <!-- Ljudfil --> 
-            <script src="STHLM.JS" id="scriptLink" type="text/javascript"></script> <!-- Script för att läsa in "STHLM.JS" filen. --> 
-        </section>
         </div>
     </div>
-    
-    <!-- Få fram din lokala position. --> 
-    
-    
-    
+</div>
+<!-- Räknaren -->
+<article class="ränkebox">
+    <section class="räknare">
+        <p id="antal">0</p>
+    </section>
+    <section class="räknareord">
+        <p>Kort</p>
+    </section>
+</article>
+<!-- Avsluta knappen -->
+ <button class="avsluta" onclick="Alert.render('Hoppas du gilla spelet!')"><i class='fas'>&#xf2f6;
+            Avsluta</i>
+</button> 
+</br>
+<!-- Gps knappen -->
+<section class="gpsposition">
+    <button id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()" class="gps" onclick="getLocationUpdate()"
+        type="button">Starta frågor för din lokala hemort</button>
+    <div id="output"></div>
+</section>
+<!-- sektion för nya kort. -->
+    <section class="ljudbox">
+        <div id="scriptLinkPlaceholder">
+            <div class="headline">
+                </br>
+                <button class="mute" onclick="mute()" type="button"><i class='fas'>&#xf6a9;</i></button>
+                <button class="sound" onclick="soundon()" type="button"><i class='fas'>&#xf028;</i></button>
+                <p>bör man eller ej</p> <!-- Rubrik. -->
+                <button class="kortfamilj50" id="number" name="fråga" value="PLAY" type="button" onclick="spin()">Tryck
+                    för kort</button> <!-- Knapp för nya kort -->
+                <audio id="audio" src="ELK_clap_one_shot_snappy.wav"></audio> <!-- Ljudfil -->           
+            </section>
+        </div>
+    </div>
+
 </body>
 </html>

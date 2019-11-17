@@ -17,12 +17,10 @@ border-style:solid;
 border-color: #4B7C9C;
 float: none;
 position: absolute;
-
 left: 50%;
 transform: translate(-50%, -50%); 
 font-family: 'Maven Pro', sans-serif;
 }
-
 /* design för bottenboxen */
 footer{
 position: fixed;
@@ -37,7 +35,7 @@ border-color: #4B7C9C;
 border-left: none;
 text-align: center;  
 }
-
+/*omspelet border*/
 .omspelet{
   position: absolute;
   left: 0;
@@ -50,6 +48,7 @@ text-align: center;
   Font-size:3.2vh;
   font-family: 'Mitr', sans-serif;
 }
+/*info speltext*/
   .spelettext{
     margin-top: 17vh;
     text-align: justify;
@@ -58,24 +57,21 @@ text-align: center;
     margin-left:3vh;
     font-family: 'Didact Gothic', sans-serif;
   }
-
+/*snabb förklaring av spelet (fega typen)*/
   .beskrivning{
     font-size:20%;
     font-family: 'Didact Gothic', sans-serif;
   }
-
+/*text om policy*/
   .policytext{
     margin-top: 16vh;
     text-align: justify;
     opacity: 0.8;
     margin-right:3vh;
     margin-left:3vh;
-    font-family: 'Didact Gothic', sans-serif;
-    
+    font-family: 'Didact Gothic', sans-serif; 
   }
-
-
-
+  /*Border policy*/
 .policy{
   position: absolute;
   left: 0;
@@ -132,10 +128,8 @@ background: none;
 border:none;
 font-family: 'Maven Pro', sans-serif;
 }
+/* design för om oss knappen ljud av och på*/
 
-.far{
-  font-size: 3.2vh;
-}
 
 /* Familj knappen på valsidan och val av kort sidan*/
 .familj{
@@ -188,7 +182,6 @@ font-size: 2.5vh;
 text-align: center;
 list-style-type: none;
 margin-top: 27vh;
-
 color:white;
 width: 220px;
 height:40vh;
@@ -202,25 +195,17 @@ transform: translate(-50%, -50%);
 font-family: 'Maven Pro', sans-serif;
 }
 
-.count{
-  width: 250px;
-height:50vh;
-}
-
 /* det stora kortet på spelsidan */
 .headline{
-
 text-align: center;
 list-style-type: none;
 margin-top: 12vh;
 border:solid 1vh;
-
 border-color: #4B7C9C;
 font-family: 'Mitr', sans-serif;
 width: 250px;
 height:60vh;
 color:#E87B7B ;
-
 font-size: 3vh;
 border-radius:1vh; 
 float: none;
@@ -239,8 +224,8 @@ border-radius: 1vh;
 outline: none;
 cursor: pointer;
 width:16%;
-height: 30px;
-font-size:10px;
+height: 32px;
+font-size: 3.2vh;
 }
 /* Sätta på ljudet knappen*/
 .sound{
@@ -252,21 +237,21 @@ border-radius: 1vh;
 outline: none;
 cursor: pointer;
 width:16%;
-height: 30px;
-font-size:10px;
-}
+height: 32px;
+font-size: 3.2vh;
 
+}
 
 
 /* Design till boxen som håller ihop ljudknapparna*/
 .ljudbox{
-  margin-top: 0.2vh;
+  margin-top: 0.1vh;
   margin-left:auto;
   margin-right:auto; 
   text-align: center;
   float: none;
 }
-
+/*Gpsen*/
 .gps {
   border-style: solid;
   border-color: #FFA595;
@@ -280,7 +265,7 @@ font-size:10px;
   border-width: 5px;
   }
 
-
+/*Gpsen*/
   .gpsposition{
     margin-top: 75vh;
     margin-left:auto;
@@ -288,6 +273,7 @@ font-size:10px;
     text-align: center;
   }
 
+  /*desiegn för siffran i räknaren*/
   .räknare{
     float: right;
     width: 4%;
@@ -295,7 +281,7 @@ font-size:10px;
     font-family: 'Mitr', sans-serif;
     font-size: 2.5vh;
   }
-
+/*desiegn för ordet i räknaren*/
   .räknareord{
     float: right;
     width: 10%;
@@ -303,16 +289,13 @@ font-size:10px;
     font-family: 'Mitr', sans-serif;
     font-size: 2.5vh;
   }
-
+/*desiegn för hela boxen*/
   .räknebox{
     content: "";
     clear: both;
     display: table;
   }
-
-
-  
-
+/*Avsluta knappen på spelsidan*/
   .avsluta{
     float: left;
     color:#FFA595;
@@ -323,7 +306,7 @@ font-size:10px;
     background: white;
     font-family: 'Mitr', sans-serif;
   }
-
+/*Overlay vid avsluta modulen*/
   #dialogoverlay{
     display: none;
     opacity: .8;
@@ -334,6 +317,7 @@ font-size:10px;
     width: 100%;
     z-index: 10;
   }
+  /*Avsluta modulen*/
   #dialogbox{
     display: none;
     position: fixed;
@@ -351,7 +335,7 @@ font-size:10px;
     transform: translate(-50%, -50%);
     font-family: 'Mitr', sans-serif;
  
-
+/*Avsluta individuella sektioner*/
   }
   #dialogbox > div{ background:#FFF; margin:8px; }
   #dialogbox > div > #dialogboxhead{  font-family: 'Didact Gothic', sans-serif;background: #FFA595; font-size:13px; padding:10px; color:rgb(255, 255, 255); }
@@ -359,26 +343,20 @@ font-size:10px;
   #dialogbox > div > #dialogboxfoot{ background: #FFA595;  margin-bottom: }
   #dialogbox > div > #dialogboxend{  background: #FFA595;  color: #FFA595 }
 
-
-
-  /* Style inputs with type="text", select elements and textareas */
+  /*Textrutan på skicka sidan*/
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
+  width: 100%; 
   font-family: 'Didact Gothic', sans-serif;
-  padding: 15px; /* Some padding */  
-  border: 1px solid #FFA595; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  padding: 15px;  
+  border: 1px solid #FFA595; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
   
 }
-
-/* When moving the mouse over the submit button, add a darker green color */
-
-
-/* Add a background color and some padding around the form */
+  /*Formuläret kontakt*/
 .container {
   border-radius: 5px;
  border-color:#FFA595;
@@ -391,7 +369,7 @@ input[type=text], select, textarea {
   margin-top:10px;
   font-family: 'Didact Gothic', sans-serif;
 }
-
+  /*Skicka knappen kontakt*/
 .skicka{
   background: #FFA595;
   color: white;
@@ -401,17 +379,15 @@ input[type=text], select, textarea {
   height: 4vh;
   font-family: 'Maven Pro', sans-serif;
   font-size:2vh
-
-  
 }
-
+/*rubrik kontakt*/
 .rubrikkontakt{
 font-size: 5vh;
 text-align: center;
 color: tomato;
 font-family: 'Mitr', sans-serif;
 }
-
+  /*info kontakt*/
 .infocontact{
   font-size: 2vh;
   text-align: center;
@@ -421,7 +397,7 @@ font-family: 'Mitr', sans-serif;
   font-family: 'Didact Gothic', sans-serif;
   margin-top: 18vh;
 }
-
+  /*Ja knapp om du vill avsluta spelet*/
 .ja{
   color: #ffffff;
 
@@ -434,7 +410,7 @@ font-family: 'Mitr', sans-serif;
   font-family: 'Maven Pro', sans-serif;
   font-size:2vh
 }
-
+  /*Nej knapp om du vill avsluta spelet*/
 .nej{
   color: #ffffff;
   font-family: 'Maven Pro', sans-serif;
@@ -446,14 +422,11 @@ font-family: 'Mitr', sans-serif;
   float:right;
   margin-bottom: 1vh;
   font-size:2vh;
-
 }
 
 
-
+  /*animation på loggan*/
 #bild {
- 
-
   background: red;
   position: relative;
   -webkit-animation: mymove 2s;  /* Safari 4.0 - 8.0 */
@@ -461,19 +434,17 @@ font-family: 'Mitr', sans-serif;
   animation: mymove 2s;
   animation-fill-mode: forwards;
 }
-
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes mymove {
   from {top: -230px;}
   to {top: 1px; }
 }
-
 @keyframes mymove {
   from {top: -230px;}
   to {top: 1px; }
 }
 
-
+/*animation på på spela knappen*/
 #demo{
  
   position: relative;
@@ -494,7 +465,7 @@ font-family: 'Mitr', sans-serif;
   to {top: 70px; }
 }
 
-
+/*animation på på rubrikeerna*/
 #rubrikslide{
  
   position: relative;
@@ -515,35 +486,7 @@ font-family: 'Mitr', sans-serif;
   to {top: -4px; }
 }
 
-
-#arrowslide{
- 
-  position: relative;
-  -webkit-animation: arrow 2s;  /* Safari 4.0 - 8.0 */
-  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
-  animation: arrow 2s;
-  animation-fill-mode: forwards;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes arrow {
-  from {top: -230px;}
-  to {top: 3px; }
-}
-
-@keyframes arrow {
-  from {top: -230px;}
-  to {top: 3px; }
-}
-
-
-
-
-
-
-
-
-
+/*Rubriker på val sidorna*/
 .rubriker{
   text-align: center;
   font-size: 5vh;

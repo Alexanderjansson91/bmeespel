@@ -23,7 +23,7 @@ var startPosLong; //variabel för longitude
     ]);
     }
 
-    //Om du är i björklingeolmen så läggs dessa frågor på
+    //Om du är i björklinge så läggs dessa frågor på
     if(startPosLat < 60.057612 &&  startPosLong > 17.478959 && startPosLat > 60.00324 && startPosLong < 17.610694)
     {
       numbers = numbers.concat([
@@ -82,12 +82,8 @@ var startPosLong; //variabel för longitude
   }
 
 
-
-
+  
   //GPS////////////////////////////////////////////////
-
-
-
 
 var watchID;
 var geoLoc;
@@ -97,7 +93,6 @@ var output;
     startPosLat = position.coords.latitude; 
     startPosLong = position.coords.longitude; 
     output =document.getElementById("output"); 
-    //skriver ut svar
 
     addfraga(); //Funktion för att binda ihop dom lokalafrågorna med GPS:en.
    
@@ -114,12 +109,12 @@ var output;
     }
   }
   
-  function getLocationUpdate(){ //Hämtar in latitude och longitude
+  function getLocationUpdate(){ //Hämtar in position
 
      if(navigator.geolocation){
         var options = {enableHighAccuracy:true,maximumAge:30000,timeout:27000};
         geoLoc = navigator.geolocation; 
-        watchID = geoLoc.watchPosition(showLocation, errorHandler, options); //läser av din plats
+        watchID = geoLoc.watchPosition(showLocation, errorHandler, options); 
         
      }
      else{
@@ -134,15 +129,12 @@ var output;
       // Gör så att bakrundden blir fadad
       dialogoverlay.style.display = "block"; 
       dialogoverlay.style.height = winH+"px";
-
         dialogbox.style.display = "block"; //Skapar boxen utifrån dialogbox klasserna
         document.getElementById('dialogboxhead').innerHTML = "Är du säker på att du vill avsluta?";  //Skrivs ut på modulen
         document.getElementById('dialogboxbody').innerHTML = dialog;
         document.getElementById('dialogboxfoot').innerHTML = '<button class="nej" onclick="Alert.ok()">Nej</button>' //nej knapp
         document.getElementById('dialogboxend').innerHTML = '<button class="ja" onclick="backtoelections()">Ja</button>' //Ja knapp
-
     }
-  //funktion för att ångra sitt val
 	this.ok = function(){
 		document.getElementById('dialogbox').style.display = "none";
 		document.getElementById('dialogoverlay').style.display = "none";

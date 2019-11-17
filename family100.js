@@ -36,17 +36,17 @@ var startPosLong; //variabel för longitude
   };
 
 
-  var clicks = 0;
-  function spin() //onclick funktion spin
+  var clicks = 0; //varibal för att visa värdet på antal kort
+  function spin() //Function för att få fram nya frågor
 
   {
     
-    clicks += 1;
-    document.getElementById("antal").innerHTML = clicks;
+    clicks += 1; //plussar ett kort per knapptryck
+    document.getElementById("antal").innerHTML = clicks; 
 
     if (numbers.length == 0) //Om spelet är klart visas en "alert"
     {
-      alert ("Spelet är klart");
+      alert ("Spelet är klart"); 
   
       location.replace("page2.html"); //När man väljer stäng så kommer man tillbaka till valsidan
       generateNumbers();
@@ -57,7 +57,9 @@ var startPosLong; //variabel för longitude
 
     //Randomerar Frågorna max en gång per runda
     var rand = Math.floor(Math.random() * numbers.length);
+   
     var num = numbers[rand];
+    
     numbers.splice(rand, 1); //ställer in så att allting bara randomeras en gång
     
     document.getElementById("number").innerHTML = num;
@@ -79,25 +81,21 @@ var startPosLong; //variabel för longitude
     var x = document.getElementById("audio");
     x.muted = false; //ljud på funktion
   }
-  
-  function scaleUp(obj, size) {
-    obj.style.fontSize = size; //scale up ljud av/öjud på knappen
-  }
-  
 
+
+  
   //GPS////////////////////////////////////////////////
-
 
 var watchID;
 var geoLoc;
-
+var output;
 
   function showLocation(position) { //visar postion
     startPosLat = position.coords.latitude; 
     startPosLong = position.coords.longitude; 
-    var output=document.getElementById("output"); 
-     //skriver ut svar
-    addfraga();
+    output =document.getElementById("output"); 
+
+    addfraga(); //Funktion för att binda ihop dom lokalafrågorna med GPS:en.
    
 
   }
@@ -112,12 +110,12 @@ var geoLoc;
     }
   }
   
-  function getLocationUpdate(){ //Hämtar in latitude och longitude
+  function getLocationUpdate(){ //Hämtar in position
 
      if(navigator.geolocation){
         var options = {enableHighAccuracy:true,maximumAge:30000,timeout:27000};
         geoLoc = navigator.geolocation; 
-        watchID = geoLoc.watchPosition(showLocation, errorHandler, options); //läser av din plats
+        watchID = geoLoc.watchPosition(showLocation, errorHandler, options); 
         
      }
      else{
@@ -125,40 +123,24 @@ var geoLoc;
      }
   }
   
-
+//modul fönster för att avsluta spelet
   function CustomAlert(){
-    this.render = function(dialog){
-      var winW = window.innerWidth;
+    this.render = function(dialog){ 
       var winH = window.innerHeight;
-      var dialogoverlay = document.getElementById('dialogoverlay');
-      var dialogbox = document.getElementById('dialogbox');
-      dialogoverlay.style.display = "block";
+      // Gör så att bakrundden blir fadad
+      dialogoverlay.style.display = "block"; 
       dialogoverlay.style.height = winH+"px";
-
-        dialogbox.style.display = "block";
-        document.getElementById('dialogboxhead').innerHTML = "Är du säker på att du vill avsluta?";
+        dialogbox.style.display = "block"; //Skapar boxen utifrån dialogbox klasserna
+        document.getElementById('dialogboxhead').innerHTML = "Är du säker på att du vill avsluta?";  //Skrivs ut på modulen
         document.getElementById('dialogboxbody').innerHTML = dialog;
-        document.getElementById('dialogboxfoot').innerHTML = '<button class="nej" onclick="Alert.ok()">Nej</button>'
-        document.getElementById('dialogboxend').innerHTML = '<button class="ja" onclick="backtoelections()">Ja</button>'
-
+        document.getElementById('dialogboxfoot').innerHTML = '<button class="nej" onclick="Alert.ok()">Nej</button>' //nej knapp
+        document.getElementById('dialogboxend').innerHTML = '<button class="ja" onclick="backtoelections()">Ja</button>' //Ja knapp
     }
 	this.ok = function(){
 		document.getElementById('dialogbox').style.display = "none";
 		document.getElementById('dialogoverlay').style.display = "none";
 	}
 }
-var Alert = new CustomAlert();
+var Alert = new CustomAlert(); //visar allting som ett "alert fönster"
  
-
-
-
-
-
-    //if(latitude == 60.018 && longitude == 17.593){
-    //<p>bjk</p>
-    //}
-  
-
-  
-  
   

@@ -2,20 +2,20 @@ var startPosLat; //variabel för latitude
 var startPosLong; //variabel för longitude
 
  var numbers = [
-    'ha hårdare straff <br> på våldäkter?',
+    'ha tv/radio avgift på skatten?',
     'dricka alkohol<br> på gatan?',
     'få köra med bil med<br> 0.5 promille i blodet?',
     'ha bättre skolmat', 'köpa starköl <br> vid 18 års ålder?',
     'förbjuda Sprit<br> över 30%?',]; //En array med frågor
 
-  function addfraga () { // En funktion som ger startPosLat och startPosLong ett värde
+  function addfraga () { // En funktion som binder ihop Gps plats med tillägs frågor
  
   console.log(startPosLat);
 
   //Om du är på liljeholmen så läggs dessa frågor på
   if(startPosLat < 59.315028 &&  startPosLong > 17.989388 && startPosLat > 59.299376 && startPosLong < 18.029594)
   {
-    numbers = numbers.concat([
+      numbers = numbers.concat([
       "bygga fler hyresrätter i <br> områden där höginkomsttagare <br> bor i Stockholm?",
       "ha vägtullar i stockholm?",
       "ha militär polis i <br> stockholms förorter?",
@@ -31,6 +31,7 @@ var startPosLong; //variabel för longitude
         "ha ett bussfritt torg i Uppsala?",
       ]);
       }
+      
 
       
   };
@@ -83,12 +84,8 @@ var startPosLong; //variabel för longitude
   }
 
 
-
-
+  
   //GPS////////////////////////////////////////////////
-
-
-
 
 var watchID;
 var geoLoc;
@@ -98,7 +95,6 @@ var output;
     startPosLat = position.coords.latitude; 
     startPosLong = position.coords.longitude; 
     output =document.getElementById("output"); 
-    //skriver ut svar
 
     addfraga(); //Funktion för att binda ihop dom lokalafrågorna med GPS:en.
    
@@ -107,7 +103,7 @@ var output;
 
   function errorHandler(err) {
     if(err.code == 1) {
-      alert("Vi kunde inte starta lokala frågor"); // kommer upp man inte väljer att hemsida använder din postin
+      alert("Error: Access is denied!"); // kommer upp man inte väljer att hemsida använder din postin
     }
     
     else if( err.code == 2) {
@@ -115,16 +111,14 @@ var output;
     }
   }
   
-  function getLocationUpdate(){ //Hämtar in latitude och longitude
+  function getLocationUpdate(){ //Hämtar in position
 
      if(navigator.geolocation){
         var options = {enableHighAccuracy:true,maximumAge:30000,timeout:27000};
         geoLoc = navigator.geolocation; 
-        
-        watchID = geoLoc.watchPosition(showLocation, errorHandler, options); //läser av din plats
+        watchID = geoLoc.watchPosition(showLocation, errorHandler, options); 
         
      }
-     
      else{
         alert("Sorry, browser does not support geolocation!"); //Skriver ut om webbläsern inte stöjder geolocation
      }
@@ -137,15 +131,12 @@ var output;
       // Gör så att bakrundden blir fadad
       dialogoverlay.style.display = "block"; 
       dialogoverlay.style.height = winH+"px";
-
         dialogbox.style.display = "block"; //Skapar boxen utifrån dialogbox klasserna
         document.getElementById('dialogboxhead').innerHTML = "Är du säker på att du vill avsluta?";  //Skrivs ut på modulen
         document.getElementById('dialogboxbody').innerHTML = dialog;
         document.getElementById('dialogboxfoot').innerHTML = '<button class="nej" onclick="Alert.ok()">Nej</button>' //nej knapp
         document.getElementById('dialogboxend').innerHTML = '<button class="ja" onclick="backtoelections()">Ja</button>' //Ja knapp
-
     }
-  //funktion för att ångra sitt val
 	this.ok = function(){
 		document.getElementById('dialogbox').style.display = "none";
 		document.getElementById('dialogoverlay').style.display = "none";
@@ -153,8 +144,4 @@ var output;
 }
 var Alert = new CustomAlert(); //visar allting som ett "alert fönster"
  
-  
-
-  
-  
   
