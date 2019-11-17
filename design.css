@@ -225,8 +225,8 @@ outline: none;
 cursor: pointer;
 width:16%;
 height: 32px;
-font-size: 3.2vh;
-text-align: center;
+
+
 }
 /* Sätta på ljudet knappen*/
 .sound{
@@ -239,8 +239,12 @@ outline: none;
 cursor: pointer;
 width:16%;
 height: 32px;
-font-size: 3.2vh;
-text-align: center;
+
+
+}
+/*ser till att ljudikorna sitter bättre till*/
+.fas{
+  font-size: 3.2vh;
 }
 
 
